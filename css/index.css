@@ -197,6 +197,7 @@ p {
   top: 0;
   width: 100%;
   opacity: 0.9;
+  height: 105px;
 }
 .nav-container div {
   padding-bottom: 0.6%;
@@ -215,7 +216,7 @@ p {
   width: 800px;
   display: flex;
   justify-content: space-between;
-  padding: 0 11%;
+  padding: 0 210px;
 }
 @media (max-width: 500px) {
   .nav-container nav {
@@ -224,7 +225,12 @@ p {
 }
 @media (max-width: 500px) {
   .nav-container nav {
-    padding-bottom: 2%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 500px) {
+  .nav-container nav {
+    padding: 0 7.5%;
   }
 }
 .nav-container nav a {
@@ -243,17 +249,7 @@ footer {
   align-items: center;
 }
 .home {
-  margin-top: 110px;
-}
-@media (max-width: 900px) {
-  .home {
-    margin-top: 88.3px;
-  }
-}
-@media (max-width: 500px) {
-  .home {
-    margin-top: 99.78px;
-  }
+  margin-top: 105px;
 }
 .home header img {
   border-radius: 10px;
@@ -404,16 +400,6 @@ footer {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-}
-@media (max-width: 900px) {
-  .about {
-    margin-top: 88.3px;
-  }
-}
-@media (max-width: 500px) {
-  .about {
-    margin-top: 99.78px;
-  }
 }
 .about h2 {
   padding-bottom: 10%;
