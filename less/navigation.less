@@ -1,1 +1,49 @@
 // Navigation code here
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    padding: .5% 0;
+    align-items: center;
+    background: @nav-bg;
+    animation-name:shake-horizontal;
+    animation-duration: 1.1s;
+    animation-iteration-count: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    height: 105px;
+    
+
+
+    div {
+        padding-bottom: .6%;
+        @media @phone-down{padding-bottom:2.5%;}
+
+        h1 {
+            font-size: 4rem;
+            color: @nav-font;
+            padding: 3% 0;
+        }
+
+    }
+
+
+
+    nav {
+        width: 800px;
+        @media @phone-down{width:100%;}
+        display: flex;
+        justify-content: space-between;
+        @media @phone-down{justify-content: space-around;}
+        padding:0 210px;
+        @media @phone-down{padding:0 7.5%;}
+
+        a {
+          .A-STYLE (@nav-font);
+        }
+    }
+}
+    
+
